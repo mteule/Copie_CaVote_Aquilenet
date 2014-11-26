@@ -6,11 +6,11 @@ Développé pour et par des membres de la Fédération FDN (http://ffdn.org)
 Installation (développement)
 ----------------------------
 
-Récupérer la dernière version de développement :
-`$ git clone git@git.ndn.cx:cavote.git`
+# Récupérer la dernière version de développement :
+$ GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git
 
 Installation de la base de données :
-`$ sqlite3 /path/to/cavote.db
+`$ sqlite3 /tmp/cavote.db
  > .read schema.sql`
  
 Modifiez les paramètres de settings.py pour qu'ils correspondent à votre installation
