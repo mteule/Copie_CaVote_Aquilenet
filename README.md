@@ -6,14 +6,6 @@ Développé pour et par des membres de la Fédération FDN (http://ffdn.org)
 Installation (développement)
 ----------------------------
 
-Dépendances :
-
- - python (testé avec python 2.7
- - python-openid
- - sqlite3
- - Flask
- - Flask-OpenID
-
 Récupérer la dernière version de développement :
 `$ git clone git@git.ndn.cx:cavote.git`
 
@@ -57,6 +49,14 @@ Si les chaînes changent :
 
 Installation (production)
 -------------------------
+
+Dépendances système:
+
+ - python (testé avec python 2.7
+ - python-openid
+ - sqlite3
+ - python-flask
+ - python-flask-openid
 
 Les étapes pour l'installation en mode production sont les
 mêmes qu'en mode développement, jusqu'à l'étape de lancement
