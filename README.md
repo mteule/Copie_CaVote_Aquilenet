@@ -7,16 +7,31 @@ Installation (développement)
 ----------------------------
 
 Récupérer la dernière version de développement :
-$ GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git
+(L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat autosigné a été ajouté de manière permanente au système)
+`$ GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git`
+
+Installation du virtualenv (requiert le package python-virtualenv)
+`$ cd cavote`
+`$ virtualenv flask`
+`$ flask/bin/pip install -r requirements.txt`
 
 Installation de la base de données :
-`$ sqlite3 /tmp/cavote.db
- > .read schema.sql`
+`$ sqlite3 /tmp/cavote.db`
+ > .read schema.sql
+ > .read schema_0.1.X_to_0.2.X.sql
+ > .read schema_0.2.X_to_0.3.X.sql
  
 Modifiez les paramètres de settings.py pour qu'ils correspondent à votre installation
+`$ nano settings.py.example`
+
+Renommer le fichier settings final
+`$ mv settings.py.example settings.py`
+
+Activer le virtualenv
+`$ source flask/bin/activate`
 
 Lancez le serveur en mode développement :
-`$ python main.py`
+`$ ./main.py`
 
 Dans un navigateur, vous pourrez à cavote à l'adresse
 <http://localhost:5000/>.
@@ -25,6 +40,8 @@ L'utilisateur par défaut peut être activé à l'adresse
 <http://localhost:5000/login/1/victory>. Modifiez en les
 identifiants de connection lors du premier accès.
 
+Quand on a terminé, désactiver le virtualenv:
+`$ deactivate`
 
 Traduction
 ----------
