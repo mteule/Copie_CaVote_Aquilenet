@@ -7,6 +7,7 @@ Installation (développement)
 ----------------------------
 
 Récupérer la dernière version de développement :
+
 (L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat autosigné a été ajouté de manière permanente au système)
 
 `$ GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git`
@@ -51,11 +52,13 @@ Lancez le serveur en mode développement :
 
 `$ ./main.py`
 
-Dans un navigateur, vous pourrez à cavote à l'adresse
+Dans un navigateur, vous pourrez accéder à cavote à l'adresse
 <http://localhost:5000/>.
 
 L'utilisateur par défaut peut être activé à l'adresse
-<http://localhost:5000/login/1/victory>. Modifiez en les
+<http://localhost:5000/login/1/victory>. 
+
+Modifiez en les
 identifiants de connection lors du premier accès.
 
 
