@@ -6,7 +6,7 @@ Développé pour et par des membres de la Fédération FDN (http://ffdn.org)
 Installation (développement)
 ----------------------------
 
-# Récupérer la dernière version de développement :
+Récupérer la dernière version de développement :
 $ GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git
 
 Installation de la base de données :
