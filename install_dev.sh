@@ -11,7 +11,7 @@
 
 # Installation du virtualenv (requiert le package python-virtualenv)
   cd cavote
-  virtualenv flask
+  virtualenv -p /usr/bin/python2.7 flask
   flask/bin/pip install -r requirements.txt
 
 # Installation de la base de données :
