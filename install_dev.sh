@@ -9,10 +9,10 @@
 # Récupérer la dernière version de développement :
 #    (L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat 
 #     autosigné a été ajouté de manière permanente au système)
-  GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git
+  GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git cavote_master
 
 # Installation du virtualenv (requiert le package python-virtualenv)
-  cd cavote
+  cd cavote_master
   virtualenv -p /usr/bin/python2.7 flask
   flask/bin/pip install -r requirements.txt
 
