@@ -10,7 +10,7 @@
 #    (L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat 
 #     autosigné a été ajouté de manière permanente au système)
 
-  GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git cavote_master
+  GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git -b vote-de-valeur cavote_vote-de-valeur
 
 # Installation du virtualenv (requiert le package python-virtualenv)
   cd cavote_master
