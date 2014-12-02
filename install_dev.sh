@@ -8,14 +8,15 @@
 #    (L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat 
 #     autosigné a été ajouté de manière permanente au système)
   GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git
+  cd cavote
+  GIT_SSL_NO_VERIFY=true git pull origin  vote-de-valeur
 
 # Installation du virtualenv (requiert le package python-virtualenv)
-  cd cavote
   virtualenv -p /usr/bin/python2.7 flask
   flask/bin/pip install -r requirements.txt
 
 # Installation de la base de données :
-  SCHEMA_SQL=`cat schema.sql schema_0.1.X_to_0.2.X.sql schema_0.2.X_to_0.3.X.sql`
+  SCHEMA_SQL=`cat schema.sql`
   sqlite3 --init  /tmp/cavote.db "$SCHEMA_SQL"
 
 # Modifiez les paramètres de settings.py pour qu'ils correspondent à votre installation
@@ -32,7 +33,8 @@
 
 # L'utilisateur par défaut peut être activé à l'adresse suivante:
 #     (Modifiez en les identifiants de connection lors du premier accès.)
-#   firefox http://localhost:5000/login/1/victory 
+#   firefox http://localhost:5000/login/1/victory  # <- Ne marche plus!
+#   firefox http://localhost:5000
 
 # Quand on a terminé, désactiver le virtualenv:
   deactivate
