@@ -13,7 +13,7 @@
   GIT_SSL_NO_VERIFY=true git clone https://code.ffdn.org/ffdn/cavote.git -b vote-de-valeur cavote_vote-de-valeur
 
 # Installation du virtualenv (requiert le package python-virtualenv)
-  cd cavote_master
+  cd cavote_vote-de-valeur
   virtualenv -p /usr/bin/python2.7 flask
   flask/bin/pip install -r requirements.txt
 
