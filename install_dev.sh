@@ -4,6 +4,8 @@
 # Installation de Cavote (développement)
 # --------------------------------------
 
+# TODO: Stopper le script s'il n'y a pas la commande virtualenv
+
 # Récupérer la dernière version de développement :
 #    (L'option GIT_SSL_NO_VERIFY=true n'est pas nécessaire si le certificat 
 #     autosigné a été ajouté de manière permanente au système)
